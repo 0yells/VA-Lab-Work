@@ -22,7 +22,7 @@ The nmap scan shows us that we have ports 21 (FTP server), 22 (SSH) and 16992 (I
     msfconsole
     search vsftpd
 
-![image](https://github.com/adammsyabill/VA-Lab-Work/blob/5c59e51da7ad06d54d93da7beb2bf10b9ceef79e/image/Screenshot%202026-04-12%20200053.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/fbf2a5647ec443dd54ddaa24a306ee42a7477c36/gambo/Screenshot%202026-04-12%20231548.png)
 
 As expected, we get a hit on an exploit for the vsftpd 2.3.4 backdoor. Use it by selecting the exploit and setting the RHOST to poral (10.150.150.12) by using ‘show options’, and run the exploit.
 
