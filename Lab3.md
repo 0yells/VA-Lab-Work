@@ -50,7 +50,7 @@ As expected, we get a hit on an exploit for the vsftpd 2.3.4 backdoor. Use it by
 set RHOSTS 10.150.150.12
 ```
 
-![gambar4](img/gambar4.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/3a97ffd965e28fbce58c8734cc2ad94346aab4e7/gambo/Screenshot%202026-04-12%20231645.png)
 
 and then we run the backdoor
 
