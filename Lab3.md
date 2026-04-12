@@ -34,7 +34,7 @@ The nmap scan shows us that we have ports 21 (FTP server), 22 (SSH) and 16992 (I
 The open port 21 is running vsFTPd 2.0.8, and looks like it allows Anonymous login with user ‘ftp’.
 A quick google search of the vsftpd 2.0.8 server shows that it is infact quite outdated. Older version such as 2.3.4 seem to have a backdoor which lets a user perform RCE exploits (CVE-2011–2523). So it is likely that these existing exploits also work on this version. Let us check metasploit if we find something.
 
-![gambar3](img/gambar3.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/7b94a317f295eb7883557872936238485e489eb4/gambo/Screenshot%202026-04-12%20231548.png)
 
 ```bash
 msfconsole
