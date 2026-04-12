@@ -6,8 +6,7 @@ First we need to scan the entire subnetwork to get the reachable ip address by u
 sudo nmap -sn 10.150.150.0/24
 ```
 
-![gambar1](img/gambar1.png)
-
+![image](https://github.com/0yells/VA-Lab-Work/blob/73a9e2e73f3cb7eb976833dd6872ea80e9db2ab6/gambo/Screenshot%202026-04-12%20231230.png)
 
 Next, we begin by enumerating the open ports on the target machine using a standard Nmap scan. At this stage, it’s useful to also perform service version detection and run common scripts to gather more detailed information about the target.
 
