@@ -1,64 +1,43 @@
 PwnTillDawn 10.150.150.12
 
-First we need to scan the entire subnetwork to get the reachable ip address by using ping scan because it is lightweight.
+First we need to scan the entire subnetwork to get to the reachable IP address by using ping scan because it is lightweight.
 
-```bash
-sudo nmap -sn 10.150.150.0/24
-```
-
-![image](https://github.com/0yells/VA-Lab-Work/blob/73a9e2e73f3cb7eb976833dd6872ea80e9db2ab6/gambo/Screenshot%202026-04-12%20231230.png)
+    sudo namp -sn 10.150.150.10/24
+![image](https://github.com/adammsyabill/VA-Lab-Work/blob/446baf15debd32cd09199b48af5b884acce942c8/image/Screenshot%202026-04-12%20200001.png)
 
 Next, we begin by enumerating the open ports on the target machine using a standard Nmap scan. At this stage, it’s useful to also perform service version detection and run common scripts to gather more detailed information about the target.
 
--sC (Default Scripts)
-Runs a set of default NSE (Nmap Scripting Engine) scripts
-Helps identify:
-Misconfigurations
-Basic vulnerabilities
-Service information
+-sC (Default Scripts) Runs a set of default NSE (Nmap Scripting Engine) scripts Helps identify: Misconfigurations Basic vulnerabilities Service information
 
--sV (Service Version Detection)
-Attempts to determine:
-Service type (e.g., Apache, vsftpd)
-Version number
+-sV (Service Version Detection) Attempts to determine: Service type (e.g., Apache, vsftpd) Version number
 
--Pn (No Ping)
-Skips host discovery (no ICMP ping)
-Treats the target as alive
+-Pn (No Ping) Skips host discovery (no ICMP ping) Treats the target as alive
 
-```bash
-nmap -sC -sV -Pn 10.150.150.12
-```
-![image](https://github.com/0yells/VA-Lab-Work/blob/7fd43fa61b5383d5576ee37541cb4e9884ca9dca/gambo/Screenshot%202026-04-12%20231328.png)
-The nmap scan shows us that we have ports 21 (FTP server), 22 (SSH) and 16992 (Intel Archive Management Technology) open.
-The open port 21 is running vsFTPd 2.0.8, and looks like it allows Anonymous login with user ‘ftp’.
-A quick google search of the vsftpd 2.0.8 server shows that it is infact quite outdated. Older version such as 2.3.4 seem to have a backdoor which lets a user perform RCE exploits (CVE-2011–2523). So it is likely that these existing exploits also work on this version. Let us check metasploit if we find something.
+     nmap -sC -sV -Pn 10.150.150.12
 
-![image](https://github.com/0yells/VA-Lab-Work/blob/7b94a317f295eb7883557872936238485e489eb4/gambo/Screenshot%202026-04-12%20231548.png)
+![image](https://github.com/adammsyabill/VA-Lab-Work/blob/279dd8dbdadfd62e2f46253908ac412cc043802a/image/Screenshot%202026-04-12%20200033.png)
 
-```bash
-msfconsole
-```
+The nmap scan shows us that we have ports 21 (FTP server), 22 (SSH) and 16992 (Intel Archive Management Technology) open. The open port 21 is running vsFTPd 2.0.8, and looks like it allows Anonymous login with user ‘ftp’. A quick google search of the vsftpd 2.0.8 server shows that it is infact quite outdated. Older version such as 2.3.4 seem to have a backdoor which lets a user perform RCE exploits (CVE-2011–2523). So it is likely that these existing exploits also work on this version. Let us check metasploit if we find something.
 
-```bash
-search vsftpd
-```
+    msfconsole
+    search vsftpd
+
+![image](https://github.com/adammsyabill/VA-Lab-Work/blob/5c59e51da7ad06d54d93da7beb2bf10b9ceef79e/image/Screenshot%202026-04-12%20200053.png)
 
 As expected, we get a hit on an exploit for the vsftpd 2.3.4 backdoor. Use it by selecting the exploit and setting the RHOST to poral (10.150.150.12) by using ‘show options’, and run the exploit.
 
-```bash
-set RHOSTS 10.150.150.12
-```
+    set RHOST 10.150.150.12
 
-And then we will be shown that we got a shell session, we can check using id command
+![image](https://github.com/adammsyabill/VA-Lab-Work/blob/0eb8f221822dfee1b98fd970cbce825b43f285ef/image/Screenshot%202026-04-12%20200201.png)
 
-![image](https://github.com/0yells/VA-Lab-Work/blob/3a97ffd965e28fbce58c8734cc2ad94346aab4e7/gambo/Screenshot%202026-04-12%20231645.png)
+    id
+    ls
+    cat FLAG!.txt
 
-id
-ls
-cat FLAG1.txt
-```
 
-Last but not least we will got the FLAG1.txt file, we can use cat command to see what is inside.
-and then we will be shown code/flag for this machine.
+
+
+
+
+  
 
