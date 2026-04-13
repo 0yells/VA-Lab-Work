@@ -6,7 +6,7 @@ LAB 4
 
 We use exiftool to extract metadata from the image file so that hidden information stored inside the image such as file details, creation data and additional embedded information that cannot be seen normally
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/0e7ac7852a9f320dbcde9dca074f080e9a91fe2d/image/Screenshot%202026-04-13%20040208.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/e868bde6a96a2c046e7f056eea831efb15996054/gambar/satu.png)
 
 and then we found in the comment: THIS IS HIDDEN FLAG
 
