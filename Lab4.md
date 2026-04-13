@@ -79,4 +79,4 @@ nd it turns out to be .png extension. we can change the extension by using
 
     open rubiks.png
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/bba2c4956156fccdf2c7370d8fd14a1e7e644758/image/Screenshot%202026-04-13%20041543.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/1209cc18d84dc838c834f3c3da65c90b2ac0a3b5/gambar/sembilan.png)
