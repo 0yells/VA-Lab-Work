@@ -69,8 +69,7 @@ and we can see that the actual file extension of solitaire.exe is actually .png 
 
 now we can open solitaire image
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/d881be227cd5bf0e20058eba179c1aeab97f0105/image/Screenshot%202026-04-13%20041128.png)
-
+![image](https://github.com/0yells/VA-Lab-Work/blob/3546b72f2aa52e41851c6c5f43d1e422b16343e6/gambar/tujuh.png)
 it also same to rubiks.jpg
 
 ![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/0247bbe9f51ef75ba6d820491a916fd436335067/image/Screenshot%202026-04-13%20041600.png)
