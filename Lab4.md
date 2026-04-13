@@ -26,8 +26,7 @@ From the ouput, we can see that hexeditor displays two sections which: • Left 
 
     binwalk dog.jpg
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/028d10bfe47f7197c17b50b41f8b99e621bb318b/image/Screenshot%202026-04-13%20040709.png)
-
+![image](https://github.com/0yells/VA-Lab-Work/blob/40964bcc5e278362d1721c10ba4f225f2eb3bad0/gambar/tiga.png)
 We can see zip file is embedded in this file. So now we can extract it using
 
     binwalk -e dog.jpg
