@@ -18,7 +18,7 @@ This show that image can contain hidden data within metadata fields such as comm
 
 We use hexeditor to view the raw binary content of the file. It will allows us to analyze both hexadecimal values and ASCII-readable text inside the image, which may reveal hidden or embedded information.
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/c233523959e4046d93f5518b2ce823c8f7557420/image/Screenshot%202026-04-13%20040250.png)
+![image](https://github.com/0yells/VA-Lab-Work/blob/2439bef6ed177da9f92c489b818fb4b0ecaa6276/gambar/dua.png)
 
 From the ouput, we can see that hexeditor displays two sections which: • Left side shows hexadecimal values • Right side shows ASCII-readable text
 
