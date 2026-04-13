@@ -49,8 +49,7 @@ and then we found the THIS IS A HIDDEN FLAG
 
 We use the strings command to extract human readable text from a binary file. This will helps identify any embedded text or information without analyzing raw hexadecimal data
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/b5c205bce7aa21f99732fbc4224ed9b3bdb72aa1/image/Screenshot%202026-04-13%20040903.png)
-
+![image](https://github.com/0yells/VA-Lab-Work/blob/0c1c51ec2b7dda45b515c905718f44cc6aba7484/gambar/lima.png)
 The command displays multiple readable strings such as: • JFIF • ICC_PROFILE • RGB XYZ • lcms
 
 Some random or unreadable characters are also shown. No hidden flag or meaningful secret message was found
