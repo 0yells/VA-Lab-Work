@@ -27,6 +27,7 @@ From the ouput, we can see that hexeditor displays two sections which: • Left 
     binwalk dog.jpg
 
 ![image](https://github.com/0yells/VA-Lab-Work/blob/40964bcc5e278362d1721c10ba4f225f2eb3bad0/gambar/tiga.png)
+
 We can see zip file is embedded in this file. So now we can extract it using
 
     binwalk -e dog.jpg
@@ -41,6 +42,7 @@ So, we can see it contains hidden_text.txt now open the hidden_text.txt to see w
     open hidden_text.txt
 
 ![image](https://github.com/0yells/VA-Lab-Work/blob/b3cbe7908ba97d7027653503dbed046a5f88bdf4/gambar/empat.png)
+
 and then we found the THIS IS A HIDDEN FLAG
 
 4.0 strings
@@ -50,6 +52,7 @@ and then we found the THIS IS A HIDDEN FLAG
 We use the strings command to extract human readable text from a binary file. This will helps identify any embedded text or information without analyzing raw hexadecimal data
 
 ![image](https://github.com/0yells/VA-Lab-Work/blob/0c1c51ec2b7dda45b515c905718f44cc6aba7484/gambar/lima.png)
+
 The command displays multiple readable strings such as: • JFIF • ICC_PROFILE • RGB XYZ • lcms
 
 Some random or unreadable characters are also shown. No hidden flag or meaningful secret message was found
@@ -61,6 +64,7 @@ Some random or unreadable characters are also shown. No hidden flag or meaningfu
 We use the file command to determine the actual type of a file based on its content, not just its file extension.
 
 ![image](https://github.com/0yells/VA-Lab-Work/blob/12bb95c35834113b0ed19ca66bd4c3f9f89fa340/gambar/enam.png)
+
 and we can see that the actual file extension of solitaire.exe is actually .png so we can change the file's extension
 
     mv solitaire.exe solitaire.png
@@ -70,10 +74,12 @@ and we can see that the actual file extension of solitaire.exe is actually .png 
 now we can open solitaire image
 
 ![image](https://github.com/0yells/VA-Lab-Work/blob/3546b72f2aa52e41851c6c5f43d1e422b16343e6/gambar/tujuh.png)
+
 it also same to rubiks.jpg
 
 ![image](https://github.com/0yells/VA-Lab-Work/blob/3eaedbcdc7ea966a31983579b7701344362c12a6/gambar/lapan.png)
-nd it turns out to be .png extension. we can change the extension by using
+
+and it turns out to be .png extension. we can change the extension by using
 
     mv rubiks.jpg rubiks.png
 
