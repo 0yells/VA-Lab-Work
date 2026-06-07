@@ -22,7 +22,7 @@ Challenge 5
 
         nc 192.168.44.131
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/141a6783128c9d5715a32eff73c5a62ad13303ab/image/Screenshot%202026-06-05%20004826.png)
+![image alt](https://github.com/0yells/VA-Lab-Work/blob/79147a3d7c7b11814aa2f21086d6533b0e23af23/gambar/lab8%203.png)
 
 Challenge 17
 
