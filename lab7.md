@@ -24,13 +24,12 @@ After filtering out the ICMP packets which all shared the same file size I focus
 
 Examining the TCP stream revealed a successful file transfer. The transferred file was named global_thermonuclear_war.gamerules.txt. Inside the file was a link pointing to a Google Doc titled "Club Tux," which contained a series of unusual symbols that didnt immediately make sense.
 
-![image alt](https://github.com/adammsyabill/VA-LabWork/blob/7da49e7eb6d4947e7d90102c897950f447f2b320/image/Screenshot%202026-06-04%20235850.png)
 
 To identify the cipher, I searched online and found that the symbol set matched the Tic-Tac-Toe Cipher (also known as the Pigpen Cipher variant). I used the dCode website, which has a dedicated Tic-Tac-Toe Cipher decoder tool, and entered the symbols found in the document.
 
 The decoder returned the plaintext, revealing the flag.
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/7572e97736a69b5b0b5543bcf35e4732807aa2a6/image/Screenshot%202026-06-05%20000121.png)
+![image alt](https://github.com/0yells/VA-Lab-Work/blob/8719398d097537363c0d161f41aa7363267c877a/gambar/lab7%204.png)
 
 Answer: EXMACHINAAVA
 
