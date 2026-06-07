@@ -28,7 +28,7 @@ Challenge 17
 
     nmap -o 192.168.44.131
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/073dbc8f1ab2810148b3559dbc8b5ddc65b5e0f2/image/Screenshot%202026-06-05%20005103.png)
+![image alt](https://github.com/0yells/VA-Lab-Work/blob/bda7b49289208f3ffc7616224d257f9cca1e8ab6/gambar/lab8%204.png)
 
 Challenge 19
 
