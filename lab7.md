@@ -12,7 +12,7 @@ After isolating the suspicious packet and inspecting its data field, I observed 
 
 To decode it, I used CyberChef a free, browser based tool commonly used in CTF challenges for data transformations. I applied the "From Base64" operation, and the output revealed the flag directly.
 
-![image alt](https://github.com/adammsyabill/VA-Lab-Work/blob/a83cf594359110a37b1f669b3428e55d21be8b5c/image/Screenshot%202026-06-04%20234509.png)
+![image alt](https://github.com/0yells/VA-Lab-Work/blob/026b9daebdc9a696cd01da7766ac0a4364846349/gambar/lab7%202.png)
 
 Answer: SUCTF2023{ai_is_cool}
 
