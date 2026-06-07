@@ -34,4 +34,4 @@ Challenge 19
 
     rpcinfo -p 192.168.56.101
 
-![image alt](https://github.com/0yells/VA-Lab-Work/blob/791a6960354955e8eac8298c5ab46bde6f52b79e/gambar/lab8%204.png)
+![image alt](https://github.com/0yells/VA-Lab-Work/blob/54ed75e9a5b109de9d453f200c70d5a305b13344/gambar/lab8%206.png)
